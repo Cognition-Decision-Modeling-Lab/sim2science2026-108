@@ -9,11 +9,11 @@ import pandas as pd
 from sklearn.metrics import roc_auc_score
 from sklearn.neighbors import NearestNeighbors
 
-ROOT = Path(__file__).resolve().parents[2]
-OUT = ROOT / "output" / "camera_ready" / "07_support_robustness_family_balance"
+ROOT = Path(__file__).resolve().parents[3]
+OUT = ROOT / "output" / "robustness" / "support_sensitivity"
 SUPPORT = ROOT / "output" / "latent_support_final_analysis" / "parallel_m4m8" / "cfg3"
-CORE_PATH = ROOT / "experiments" / "step_05_compare_metrics" / "step_02_latent_support_analysis.py"
-CFG_PATH = ROOT / "experiments" / "step_05_compare_metrics" / "step_03_final_latent_support_cfgs" / "cfg3.py"
+CORE_PATH = ROOT / "experiments" / "latent_support" / "step_02_latent_support_analysis.py"
+CFG_PATH = ROOT / "experiments" / "latent_support" / "step_03_final_latent_support_cfgs" / "cfg3.py"
 DESIGNS = ("pub_Konstantinidis2020", "pub_Thrailkill2023")
 OW = ("m4", "m5", "m6", "m7")
 AW = ("m8",)
@@ -178,8 +178,8 @@ def module(path, name):
 
 
 def make_core():
-    for p in (ROOT, ROOT / "src", ROOT / "experiments" / "step_03_latent_models",
-              ROOT / "experiments" / "step_05_compare_metrics"):
+    for p in (ROOT, ROOT / "src", ROOT / "experiments" / "representation_learning",
+              ROOT / "experiments" / "latent_support"):
         if str(p) not in sys.path:
             sys.path.insert(0, str(p))
     core = module(CORE_PATH, "camera_ready_sensitivity_core")

@@ -7,7 +7,7 @@ import pandas as pd
 from scipy.special import xlogy
 
 
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
+PROJECT_ROOT = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(PROJECT_ROOT / "src"))
 
 from choice_generators import (

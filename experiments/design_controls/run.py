@@ -18,10 +18,10 @@ from sklearn.metrics import roc_auc_score
 from sklearn.neighbors import NearestNeighbors
 
 ROOT = Path(__file__).resolve().parents[2]
-OUT = ROOT / "output" / "step_07_trial_count_control"
-SRC = ROOT / "experiments" / "step_05_compare_metrics"
-LATENT = ROOT / "experiments" / "step_03_latent_models"
-VIZ = ROOT / "experiments" / "step_06_visualization"
+OUT = ROOT / "output" / "design_controls"
+SRC = ROOT / "experiments" / "latent_support"
+LATENT = ROOT / "experiments" / "representation_learning"
+VIZ = ROOT / "experiments" / "visualization"
 for p in (ROOT, ROOT / "src", LATENT, SRC):
     if str(p) not in sys.path:
         sys.path.insert(0, str(p))

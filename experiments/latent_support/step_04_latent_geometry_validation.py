@@ -19,7 +19,7 @@ from scipy.stats import spearmanr
 THIS_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = THIS_DIR.parents[1]
 SRC_DIR = PROJECT_ROOT / "src"
-LATENT_DIR = PROJECT_ROOT / "experiments" / "step_03_latent_models"
+LATENT_DIR = PROJECT_ROOT / "experiments" / "representation_learning"
 
 for _path in (str(PROJECT_ROOT), str(SRC_DIR), str(LATENT_DIR), str(THIS_DIR)):
     if _path not in sys.path:

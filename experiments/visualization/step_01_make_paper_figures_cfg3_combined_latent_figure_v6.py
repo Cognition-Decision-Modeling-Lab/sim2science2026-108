@@ -21,7 +21,7 @@ except Exception as exc:
 
 THIS_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = THIS_DIR.parents[1]
-STEP05_DIR = PROJECT_ROOT / "experiments" / "step_05_compare_metrics"
+STEP05_DIR = PROJECT_ROOT / "experiments" / "latent_support"
 ACTIVE_CONFIG = "cfg3"
 CFG_NAME = ACTIVE_CONFIG
 CFG_DIR = STEP05_DIR / "step_03_final_latent_support_cfgs"
@@ -33,7 +33,7 @@ CFG_PATH = (
 OUTPUT_ROOT = (
     PROJECT_ROOT
     / "output"
-    / "step_06_visualization"
+    / "visualization"
     / CFG_NAME
 )
 MAIN_DIR = OUTPUT_ROOT / "main"
@@ -619,7 +619,7 @@ def load_core_config():
         return _CORE, _CFG
 
     src_dir = PROJECT_ROOT / "src"
-    latent_dir = PROJECT_ROOT / "experiments" / "step_03_latent_models"
+    latent_dir = PROJECT_ROOT / "experiments" / "representation_learning"
     for path in (PROJECT_ROOT, src_dir, latent_dir, STEP05_DIR):
         text = str(path)
         if text not in sys.path:

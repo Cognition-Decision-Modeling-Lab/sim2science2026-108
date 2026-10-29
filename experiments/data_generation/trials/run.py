@@ -8,7 +8,7 @@ TRIAL_DATA_NAME = "general_400"
 N_SUBJECTS = 50000
 SEED = 31
 
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
+PROJECT_ROOT = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(PROJECT_ROOT / "src"))
 
 from trial_generators.generate_trials import (
