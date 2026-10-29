@@ -1,8 +1,8 @@
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[3]
 HERE = Path(__file__).resolve().parent
-OUT = ROOT / "output" / "camera_ready" / "01_prior_sensitivity"
+OUT = ROOT / "output" / "robustness" / "prior_sensitivity"
 
 TRIAL_DESIGN = "pub_Konstantinidis2020"
 TRAIN_DESIGN = "general_400"

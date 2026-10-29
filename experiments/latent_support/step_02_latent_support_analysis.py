@@ -90,7 +90,7 @@ from scipy.stats import rankdata, spearmanr
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-LATENT_DIR = PROJECT_ROOT / "experiments" / "step_03_latent_models"
+LATENT_DIR = PROJECT_ROOT / "experiments" / "representation_learning"
 sys.path.insert(0, str(PROJECT_ROOT / "src"))
 sys.path.insert(0, str(LATENT_DIR))
 

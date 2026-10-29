@@ -9,8 +9,8 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import roc_auc_score
 
 ROOT = Path(__file__).resolve().parents[3]
-sys.path.insert(0, str(ROOT / "experiments" / "step_05_compare_metrics"))
-sys.path.insert(0, str(ROOT / "experiments" / "step_03_latent_models"))
+sys.path.insert(0, str(ROOT / "experiments" / "latent_support"))
+sys.path.insert(0, str(ROOT / "experiments" / "representation_learning"))
 sys.path.insert(0, str(ROOT / "src"))
 import step_02_latent_support_analysis as core
 import step_04_latent_geometry_validation as geometry

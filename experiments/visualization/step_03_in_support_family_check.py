@@ -46,7 +46,7 @@ SUPPORT_ROOT_CANDIDATES = (
 OUTPUT_DIR = (
     PROJECT_ROOT
     / "output"
-    / "step_06_visualization"
+    / "visualization"
     / CFG_NAME
     / "in_support_family_check"
 )

@@ -14,7 +14,7 @@ from sklearn.neighbors import NearestNeighbors
 
 THIS_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = THIS_DIR.parents[1]
-STEP05_DIR = PROJECT_ROOT / "experiments" / "step_05_compare_metrics"
+STEP05_DIR = PROJECT_ROOT / "experiments" / "latent_support"
 
 CFG_NAME = "cfg3"
 CFG_DIR = STEP05_DIR / "step_03_final_latent_support_cfgs"
@@ -48,7 +48,7 @@ BOOTSTRAP_RESAMPLES = 1000
 OUTPUT_DIR = (
     PROJECT_ROOT
     / "output"
-    / "step_06_visualization"
+    / "visualization"
     / CFG_NAME
     / "pairwise_model_compatibility"
 )
@@ -75,7 +75,7 @@ def load_module(path: Path, module_name: str):
 
 
 def load_core_and_cfg():
-    latent_dir = PROJECT_ROOT / "experiments" / "step_03_latent_models"
+    latent_dir = PROJECT_ROOT / "experiments" / "representation_learning"
     for path in (PROJECT_ROOT, PROJECT_ROOT / "src", latent_dir, STEP05_DIR):
         text = str(path)
         if text not in sys.path:
