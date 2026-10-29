@@ -60,7 +60,7 @@ def load_components():
     rep = core.load_representation(NP_KIND, TRAIN_MODELS)
     if rep is None:
         raise FileNotFoundError("Original cfg3 general_400 m4--m8 nn1 checkpoint missing")
-    viz = module(VIZ / "step_01_make_paper_figures_cfg3_combined_latent_figure_v5_fixed copy.py", "trial_control_viz")
+    viz = module(VIZ / "paper_figures.py", "trial_control_viz")
     viz.SHOW_LATENT_MODEL_LABELS = 0
     viz.TRIAL_LABELS["controlled27"] = "27 trials sampled from 380-trial design"
     return core, rep, viz
