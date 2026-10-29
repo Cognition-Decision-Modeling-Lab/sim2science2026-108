@@ -49,8 +49,8 @@ def module(path, name):
 
 
 def load_components():
-    core = module(SRC / "step_02_latent_support_analysis.py", "trial_control_support_core")
-    cfg = module(SRC / "step_03_final_latent_support_cfgs" / "cfg3.py", "trial_control_cfg3")
+    core = module(SRC / "support_core.py", "trial_control_support_core")
+    cfg = module(SRC / "configs" / "cfg3.py", "trial_control_cfg3")
     core.REPRESENTATION_TRAIN_TRIAL_DATA_NAME = "general_400"
     core.REPRESENTATION_HPARAMS = dict(cfg.REPRESENTATION_HPARAMS)
     core.MAX_POINTS_PER_DATA = CAP

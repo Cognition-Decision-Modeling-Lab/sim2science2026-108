@@ -12,8 +12,8 @@ from sklearn.neighbors import NearestNeighbors
 ROOT = Path(__file__).resolve().parents[3]
 OUT = ROOT / "output" / "robustness" / "support_sensitivity"
 SUPPORT = ROOT / "output" / "latent_support_final_analysis" / "parallel_m4m8" / "cfg3"
-CORE_PATH = ROOT / "experiments" / "latent_support" / "step_02_latent_support_analysis.py"
-CFG_PATH = ROOT / "experiments" / "latent_support" / "step_03_final_latent_support_cfgs" / "cfg3.py"
+CORE_PATH = ROOT / "experiments" / "latent_support" / "support_core.py"
+CFG_PATH = ROOT / "experiments" / "latent_support" / "configs" / "cfg3.py"
 DESIGNS = ("pub_Konstantinidis2020", "pub_Thrailkill2023")
 OW = ("m4", "m5", "m6", "m7")
 AW = ("m8",)

@@ -17,7 +17,7 @@ PROJECT_ROOT = THIS_DIR.parents[1]
 STEP05_DIR = PROJECT_ROOT / "experiments" / "latent_support"
 
 CFG_NAME = "cfg3"
-CFG_DIR = STEP05_DIR / "step_03_final_latent_support_cfgs"
+CFG_DIR = STEP05_DIR / "configs"
 CFG_PATH = CFG_DIR / f"{CFG_NAME}.py"
 
 REPRESENTATION = "nn1"
@@ -81,7 +81,7 @@ def load_core_and_cfg():
         if text not in sys.path:
             sys.path.insert(0, text)
 
-    core_path = STEP05_DIR / "step_02_latent_support_analysis.py"
+    core_path = STEP05_DIR / "support_core.py"
     core = load_module(core_path, "step06_pairwise_support_core")
     cfg = load_module(CFG_PATH, f"step06_pairwise_{CFG_NAME}")
 

@@ -12,8 +12,8 @@ ROOT = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(ROOT / "experiments" / "latent_support"))
 sys.path.insert(0, str(ROOT / "experiments" / "representation_learning"))
 sys.path.insert(0, str(ROOT / "src"))
-import step_02_latent_support_analysis as core
-import step_04_latent_geometry_validation as geometry
+import support_core as core
+import geometry_validation as geometry
 
 TRAIN = ("m4", "m5", "m6", "m7", "m8")
 MODELS = ("m4", "m5", "m6", "m7", "m8", "m1", "m3", "m9", "r1")

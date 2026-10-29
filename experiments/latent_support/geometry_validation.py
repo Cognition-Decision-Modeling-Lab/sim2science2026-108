@@ -26,11 +26,11 @@ for _path in (str(PROJECT_ROOT), str(SRC_DIR), str(LATENT_DIR), str(THIS_DIR)):
         sys.path.insert(0, _path)
 
 try:
-    import step_02_latent_support_analysis as core
+    import support_core as core
 except ImportError as exc:
     raise ImportError(
-        "Place this file in experiments/step_05_compare_metrics/ so it can "
-        "import step_02_latent_support_analysis.py."
+        "Place this file in experiments/latent_support/ so it can "
+        "import support_core.py."
     ) from exc
 
 from choice_generators import (

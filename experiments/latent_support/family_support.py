@@ -15,7 +15,7 @@ import pandas as pd
 
 
 THIS_DIR = Path(__file__).resolve().parent
-CORE_PATH = THIS_DIR / "step_02_latent_support_analysis.py"
+CORE_PATH = THIS_DIR / "support_core.py"
 if not CORE_PATH.exists():
     raise FileNotFoundError(
         f"Expected the previous analysis file next to this script: {CORE_PATH}"
@@ -104,7 +104,7 @@ SHOW_FIGURES = False
 SAVE_LONG_TABLES_FOR_PRIMARY = True
 
 
-CFG_DIR = THIS_DIR / "step_03_final_latent_support_cfgs"
+CFG_DIR = THIS_DIR / "configs"
 ACTIVE_CONFIG = "cfg4"
 
 

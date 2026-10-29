@@ -24,7 +24,7 @@ PROJECT_ROOT = THIS_DIR.parents[1]
 STEP05_DIR = PROJECT_ROOT / "experiments" / "latent_support"
 ACTIVE_CONFIG = "cfg3"
 CFG_NAME = ACTIVE_CONFIG
-CFG_DIR = STEP05_DIR / "step_03_final_latent_support_cfgs"
+CFG_DIR = STEP05_DIR / "configs"
 CFG_PATH = (
     CFG_DIR
     / f"{CFG_NAME}.py"
@@ -625,7 +625,7 @@ def load_core_config():
         if text not in sys.path:
             sys.path.insert(0, text)
 
-    core_path = STEP05_DIR / "step_02_latent_support_analysis.py"
+    core_path = STEP05_DIR / "support_core.py"
     core = load_module(core_path, "step06_latent_support_core")
     if not CFG_PATH.exists():
         available = sorted(path.stem for path in CFG_DIR.glob("cfg*.py"))
