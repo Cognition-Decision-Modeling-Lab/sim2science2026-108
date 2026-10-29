@@ -23,7 +23,7 @@ from neural_processes_choice_classifier import (
 BETA_VALUES = (0.2, 0.5, 1)
 CLASSIFICATION_WEIGHT_VALUES = (0.2, 0.5, 1)
 TRIAL_DATA_NAME = "general_400"
-DATA_NAMES = ("m1", "m2", "m3")
+DATA_NAMES = ("m4", "m5", "m6", "m7", "m8")
 
 
 CONTEXT_MIN_FRACTION = 0.7

@@ -22,7 +22,7 @@ LEARNING_RATE = 5e-4
 MAX_EPOCHS = 1000
 PATIENCE = 20
 TRIAL_DATA_NAME = "general_400"
-DATA_NAMES = ("m1", "m2", "m3")
+DATA_NAMES = ("m4", "m5", "m6", "m7", "m8")
 
 TRAINING_CONFIG = ParameterDecoderTrainingConfig(
     batch_size=BATCH_SIZE,
