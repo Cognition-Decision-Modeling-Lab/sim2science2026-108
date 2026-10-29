@@ -1,0 +1,42 @@
+TRIAL_GENERATOR_CONFIGS = {
+    "syn_GridSSLL": {
+        "source": "synthetic",
+        "generator": "grid_ssll",
+        "generator_kwargs": {
+            "n_amount_levels": 6,
+            "n_delay_levels": 6,
+        },
+        "n_trials": 225,
+        "money_range": (100.0, 500.0),
+        "money_unit": "project monetary units",
+        "day_range": (0.0, 38.0 * 365.0 / 12.0),
+    },
+    "pub_Konstantinidis2020": {
+        "source": "published",
+        "generator": "konstantinidis_2020_exp1_intertemporal",
+        "generator_kwargs": {},
+        "n_trials": 380,
+        "money_range": (100.0, 500.0),
+        "money_unit": "AUD",
+        "day_range": (0.0, 38.0 * 365.0 / 12.0),
+    },
+    "pub_Thrailkill2023": {
+        "source": "published",
+        "generator": "thrailkill_2023_delay_discounting",
+        "generator_kwargs": {},
+        "n_trials": 27,
+        "money_range": (11.0, 85.0),
+        "money_unit": "USD",
+        "day_range": (0.0, 186.0),
+    },
+    "general_400": {
+        "source": "general",
+        "generator": "general_400",
+        "generator_kwargs": {},
+        "layout": "subject_specific",
+        "n_trials": 400,
+        "money_range": (10.0, 500.0),
+        "money_unit": "project monetary units",
+        "day_range": (0.0, 1200.0),
+    },
+}
